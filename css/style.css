@@ -1,0 +1,183 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Alice', serif;
+	line-height: 1.6;
+	color: #000000;
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2,
+h3,
+a {
+	color: #000000;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+    text-align: center;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+    background: lightblue;
+	margin-top: -20px;
+    padding: 50px
+}
+
+.main-nav {
+	
+    list-style: none;
+}
+
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+        
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		color: #000000;
+		text-transform: uppercase;
+        padding: 5px;
+     
+        
+	}
+
+	.main-nav a:hover {
+		color: #093a58;
+	}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+
+
+.main-footer {
+    text-align: center;
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+
+body {
+   
+  padding-top:-0;
+    
+}
+
+    img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+    
+
+.main-header {
+ 
+  
+  width:100%;
+ 
+}
+
+.name {
+	
+
+	}
+
+
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin: 9.9px;
+   
+	
+
+	
+  @media (min-width: 1025px) {  
+
+      .name {
+          float:left;
+      }
+   
+    img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+    
+.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin: 9.9px;
+
+    }
