@@ -80,7 +80,7 @@
 		}
 		
 		.main-nav a:hover {
-			color: #CDCDCD;
+			color: gray;
 		}
 		/* ---- Layout Containers ---- */
 		
@@ -103,6 +103,115 @@
 			border: 1px solid black;
 			background-color: white;
 		}
+
+/*FORM*/
+
+
+
+form{
+  max-width: 300px;
+  margin: 0 auto;
+    
+}
+
+
+/*FIELDS*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	background: rgba(255, 255, 255, 0.1);
+    border: 1px solid black;
+    border-radius: 4px;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background-color: whitesmoke;
+	color: black;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	margin-bottom: 30px;
+}
+
+
+select {
+	padding: 6px;
+	height: 32px;
+	border-radius: 2px;
+}
+
+#zipcode {
+    width: 50%;
+
+}
+
+fieldset {
+        border: 0 none;
+    }
+
+input:focus, textarea:focus {
+    background-color: lightyellow;
+    border: 2px solid black;
+}
+
+
+/*PLACEHOLDER*/
+
+::-webkit-input-placeholder {
+    color: black;
+    text-indent: 170px;
+    font-size:13px;
+    font-style: italic;
+   
+    
+    
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;
+   text-indent: 170px;
+   font-size:13px;
+   font-style: italic;
+   
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+   text-indent: 170px;
+   font-size:13px;
+   font-style: italic;
+   
+}
+
+:-ms-input-placeholder {  
+   color: black;
+   text-indent: 170px;
+   font-size:13px;
+   font-style: italic;
+   
+}
+
+/*BUTTON*/
+
+button {
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	background-color: navy;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid black;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+	margin-bottom: 10px;
+}
+
 		/* ================================= 
   Media Queries
 ==================================== */
@@ -129,6 +238,41 @@
 			.name {
 				font-size: 30px;
 			}
+            
+            form {
+         min-width: 500px;
+        
+    }
+    
+    input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select#state {
+		width: 70%;
+		display: inline-block;
+	}
+    
+    
+    ::-webkit-input-placeholder {
+         color: gray;
+         text-indent: 230px;
+         font-size:13px;
+         font-style: italic;
+
+
+    }
+    
+    
+ .form-contact label {
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+    margin: 10px 0 5px;
+
+
+
+
+    }
 		}
 		
 		@media (min-width: 1025px) {
@@ -163,4 +307,6 @@
 				margin-top: 2%;
 				text-align: center;
 			}
+            
+            
 		}
